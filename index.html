@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>silvares.js</title>
+
+  <meta name="description" content="Fellipe Silvares (semfomee) — Dev & Criador de sites. Twitch, Instagram e TikTok em um só lugar.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="semfomee — Fellipe Silvares">
+  <meta property="og:description" content="Dev & Criador de sites. Twitch, Instagram e TikTok em um só lugar.">
+  <meta property="og:site_name" content="semfomee">
+  <meta property="og:url" content="https://fellipesilvares.github.io/silvares.js/">
+  <meta property="og:image" content="https://fellipesilvares.github.io/silvares.js/fundosite.webp">
+
+  <meta name="theme-color" content="#a78bfa">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://fellipesilvares.github.io/silvares.js/fundosite.webp">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="./favicon_io/favicon.ico">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="locked">
+
+  <!-- Tela inicial -->
+  <div id="gate">
+    <div class="gate-inner">
+      <div class="gate-text">click here</div>
+      <div class="gate-sub">toque para entrar</div>
+    </div>
+  </div>
+
+  <!-- Partículas -->
+  <canvas id="particles"></canvas>
+
+  <main class="wrap">
+
+    <!-- Perfil -->
+    <section class="profile">
+
+      <div class="avatar-wrap">
+
+        <div class="avatar" id="avatar">
+          SF
+        </div>
+
+        <div
+          class="discord-status-dot offline"
+          id="discordStatusDot">
+        </div>
+
+      </div>
+
+      <h1 id="profileName">semfomee</h1>
+
+      <!-- Estatísticas -->
+      <div class="stats-bar">
+
+        <div class="stat">
+          <strong id="visits">…</strong>
+          <span>visitas</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <strong>2026</strong>
+          <span>desde</span>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat">
+          <strong>3</strong>
+          <span>redes sociais</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Links -->
+    <section class="links">
+
+      <!-- Twitch -->
+      <a
+        class="link"
+        href="https://www.twitch.tv/semfomee"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icon icon-twitch">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="#fff"
+          >
+
+            <path d="M4.3 2 3 5.7v14.6h5v2h2.8l2-2H17l4-4V2H4.3zm14.7 11.3-2.7 2.7h-4l-2 2v-2H6.7V3.7h12.3v9.6z"/>
+
+            <path d="M15.7 6.7h1.7v5h-1.7zm-4.6 0h1.7v5h-1.7z"/>
+
+          </svg>
+
+        </div>
+
+        <div class="link-text">
+          <div class="link-title">Twitch</div>
+          <div class="link-sub">@semfomee</div>
+        </div>
+
+        <div class="arrow">↗</div>
+
+      </a>
+
+
+      <!-- Instagram -->
+      <a
+        class="link"
+        href="https://www.instagram.com/fellipe.silvares/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icon icon-instagram">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="#fff"
+            stroke-width="1.8"
+          >
+
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="5"
+            />
+
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+            />
+
+            <circle
+              cx="17.2"
+              cy="6.8"
+              r="1"
+              fill="#fff"
+              stroke="none"
+            />
+
+          </svg>
+
+        </div>
+
+        <div class="link-text">
+          <div class="link-title">Instagram</div>
+          <div class="link-sub">@fellipe.silvares</div>
+        </div>
+
+        <div class="arrow">↗</div>
+
+      </a>
+
+
+      <!-- TikTok -->
+      <a
+        class="link"
+        href="https://www.tiktok.com/@semfomee?is_from_webapp=1&sender_device=pc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="icon icon-tiktok">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="#fff"
+          >
+
+            <path d="M16.6 5.8c-.9-.6-1.5-1.6-1.6-2.8h-3v13.1c0 1.4-1.1 2.5-2.5 2.5S7 17.5 7 16.1c0-1.4 1.1-2.5 2.5-2.5.3 0 .6.1.9.2v-3.1c-.3-.1-.6-.1-.9-.1-2.9 0-5.4 2.4-5.4 5.4S6.6 21.4 9.5 21.4s5.4-2.4 5.4-5.4V9.4c1.1.8 2.5 1.3 4 1.3V7.7c-.9 0-1.8-.3-2.3-1.9z"/>
+
+          </svg>
+
+        </div>
+
+        <div class="link-text">
+          <div class="link-title">TikTok</div>
+          <div class="link-sub">@semfomee</div>
+        </div>
+
+        <div class="arrow">↗</div>
+
+      </a>
+
+    </section>
+
+
+    <!-- Música -->
+    <audio
+      id="audio"
+      src="./musica.mp3"
+      loop
+      style="display:none"
+    ></audio>
+
+
+    <!-- Rodapé -->
+    <footer>
+      Silvares • 2026 &nbsp;·&nbsp;
+      <span class="heart">Viva a programação</span>
+    </footer>
+
+  </main>
+
+
+  <!-- Contador GoatCounter -->
+  <script
+    data-goatcounter="https://silvaresjs.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+
+  <!-- JavaScript -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
